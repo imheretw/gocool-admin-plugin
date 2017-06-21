@@ -1,9 +1,9 @@
 {
-  "name": "gocool-admin-plugin",
+  "name": "gocool-elasticsearch",
   "version": "0.1.0",
-  "description": "a admin plugin for gocool",
+  "description": "a elasticsearch plugin for gocool",
   "main": "dist/index.js",
-  "repository": "git@github.com:imheretw/gocool-admin-plugin.git",
+  "repository": "git@github.com:imheretw/gocool-elasticsearch.git",
   "author": "imheretw",
   "license": "MIT",
   "scripts": {
@@ -16,6 +16,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.2",
+    "babel-plugin-transform-es2015-instanceof": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
@@ -37,6 +38,7 @@
     "standard-changelog": "^1.0.1"
   },
   "dependencies": {
-    "gocool": "^0.1.6"
+    "elasticsearch-odm": "^1.1.0",
+    "gocool": "^0.2.0"
   }
 }
