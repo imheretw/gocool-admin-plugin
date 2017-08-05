@@ -10,6 +10,7 @@
     "prepublish": "npm run build",
     "build": "rimraf dist && babel lib -s -D -d dist",
     "test": "PORT=4000 nyc mocha --compilers js:babel-core/register -r test/init --recursive test -t 10000",
+    "test:debug": "npm run test -- --debug-brk",
     "lint": "eslint lib",
     "changelog": "standard-changelog"
   },
@@ -22,7 +23,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2016": "^6.24.1",
     "babel-preset-es2017": "^6.24.1",
-    "chai": "^3.5.0",
+    "chai": "^4.1.0",
     "chai-http": "^3.0.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
@@ -38,7 +39,7 @@
     "standard-changelog": "^1.0.1"
   },
   "dependencies": {
-    "elasticsearch-odm": "^1.1.0",
+    "elasticsearch-odm-5": "^0.4.1",
     "gocool": "^0.2.0"
   }
 }
